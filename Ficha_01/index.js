@@ -23,6 +23,8 @@ function funcD(){
         res = n1 + n2
         console.log("Resultado = " + res)
         break
+       
+
 
         case "-":
         res = n1 - n2
