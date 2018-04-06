@@ -131,6 +131,7 @@ function funcJ() {
     let result = primo ? "SIM" : "NÃO"
     console.log(result)
 }
+// para acabar
 function funcK() {
     //exc fatorial
     let n = parseInt(prompo("Introduza o nº a fatorizar: "))
@@ -143,4 +144,64 @@ function funcK() {
 
 
 
+}
+function funcL() {
+    let n = parseInt(prompt("Introuduzir um número: "))
+    let total = 0
+    //Segundo o nº introduzido vamos testar de 1 até ao prorprio nº qual todos nºs que sao 
+    // e somar todos os nº com que isso acontece
+    
+    for (let i = 1; i < n; i++) {
+        if(n % i == 0) {
+            total += i
+        }        
+    }
+    //forma de apresentar o resultado de forma resumida
+    let result = (total == n) ? "SIM" : "NÃO"
+    console.log(result)
+    
+}
+function funcM() {
+    let n = parseInt(prompt("Introuduzir o ano: "))
+    if (n % 4 == 0) {
+        console.log("O ano é bissexto")
+    }
+    else{
+        console.log("O ano não é bissexto")
+    }
+}
+function funcN(){
+    let num   
+    num = prompt("Escreva um número")        
+    if (num.charAt(0) == num.charAt(2) ) {
+        console.log("SIM")
+    } else {
+        console.log("NÃO")
+    }  
+}
+
+// perceber o nome das funções
+function funcO() {    
+    // Gerar nº aleatório entre 1 e 100
+    let genNum = parseInt((Math.random() * 99) + 1)
+    let attempts = 0
+
+    do {
+        num = parseInt(prompt("Escreva um número"))
+        if (num > genNum) {
+            console.log("PARA BAIXO!")
+        } else if (num < genNum) {
+            console.log("PARA BAIXO!")
+        } else {            
+            break
+        }
+        attempts++
+    } while (attempts < 5);
+    
+    if (attempts < 5) {
+        console.log("ADIVINHOU PARABÉNS!")
+    } else {
+        console.log("EXCEDEU O Nº DE TENTATIVAS!")
+    }
+    
 }

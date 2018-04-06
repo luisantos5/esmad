@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ficha 7 ESMAD Running</title>
+</head>
+<body>
+    <form id="" action="">
+        <label for="txtNome">Nome</label>
+        <input type="text" name=""  id="txtNome" maxlength="50" required>
+        <br>
+
+        <label for="txtMorada">Morada</label>
+        <input type="text" name="" id="txtMorada">
+        <br>
+
+        
+        <label for="txtCodigoPostal">Código Postal</label>
+        <input type="text" name="" id="txtCodigoPostal" minlength="4" maxlength="4" required>
+        <!--required para campos de preenchiemento obrigatório-->
+        -
+        <input type="text" name="" id="txtCodigoPostal" minlength="3" maxlength="3" required>
+        <br>
+
+
+        <label for="txtTelemovel">Telemóvel</label>
+        <input type="number" name="" id="txtTelemovel" min="900000000" max="999999999">
+        <br>
+
+        <label for="txtData">Data de Nascimento</label>
+        <input type="date" name="" id="txtData">
+        <br>
+
+        <label for="txtlocalidades">Localidade</label>
+        <input list="locais" id="txtlocalidades">
+        <datalist id="locais">
+            <option value="Matosinho">s</option>
+            <option value="Póvoa de Varzim"></option>
+            <option value="Vila do Conde"></option>
+            <option value="Maia"></option>
+            <option value="Porto"></option>
+
+        </datalist>
+        <br><br>
+
+        <label for="sex">Sexo</label>
+        F<input name="genero" type="radio">
+        M<input name="genero" type="radio"checked>
+        <br><br>
+
+        <label for="txtEmail">E-mail</label>
+        <input type="email" name="" id="txtEmail" placeholder="example@mail.com" required>
+        <br><br>
+
+        <label for="txtPassword">Password</label>
+        <input type="password" name="" id="txtPass" minlength="7" maxlength="10" required>
+        <br><br>
+
+        <label for="txtPPage">Página Pessoal</label>
+        <input type="url" name="" id="txtPPage">
+        <br><br>
+
+        <label for="txtPPage">Nº Calçado</label>
+        <input type="number" name="" id="" min="30" max="50">
+        <br><br>
+
+        <label for="">Principais desportos: </label>
+        <input type="checkbox" name="" id="chbRunning">Running
+        <input type="checkbox" name="" id="chbRunning">Cycling
+        <input type="checkbox" name="" id="chbRunning">Natação
+        <input type="checkbox" name="" id="chbRunning">Futebol
+        <input type="checkbox" name="" id="chbRunning">Vela
+        <input type="checkbox" name="" id="chbRunning">Ténis
+        <input id="a"type="checkbox" name="" id="chbRunning"><label for="Outros">Outros</label>
+        <input id="b"type="text" disabled="disabled">
+        <br><br>
+        <script> 
+        let conf= document.getElementById("a").value
+        if(conf == true){
+            document.getElementById("b").disabled=false
+
+        }
+        </script>
+        <input type="submit" value="SUBMISSÃO">
+        <input type="reset" value="LIMPEZA">
+        
+    </form>
+</body>
+</html>
