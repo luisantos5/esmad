@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fotos Drone ESMAD </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    
+    <!-- Custom js -->
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-3">Fotos Drone</h1>
+            <p class="lead">Registo de fotografias capturadas pelo drone</p>
+            <hr class="my-2">
+            <form id="frmGames">
+             <div class="form-row">
+                      <div class="form-group col-md-8">
+                         <label for="inputZona">Local da Fotografia</label>
+                         <select id="inputZona" class="form-control" required>                         
+                             <option value="Escadas">Escadas</option>
+                             <option value="Relógio">Relógio</option>
+                             <option value="Anfiteatro">Anfiteatro</option>
+                             <option value="Lago">Lago</option>
+                         </select>
+                     </div>
+                     <div class="form-group col-md-4">
+                         <label for="inputhora">Hora da Fotografia</label>
+                         <input type="time" value="00:00" class="form-control" id="inputhora"  max="24:00" required>
+                     </div>                    
+                    
+                     <div class="form-group col-md-6">
+                         <label for="nmasc">Número de Pessoas do Sexo Masculino</label>
+                         <input type="number" name=""  value="7" class="form-control" id="nmasc" required>
+
+                     </div>
+                     <div class="form-group col-md-6">  
+                            <label for="nfem">Número de Pessoas do Sexo Feminino</label>
+                            <input type="number" name=""  value="7" class="form-control" id="nfem" required>
+   
+                     </div>
+                     <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="inputPhotos">Fotografia</label>
+                                <input type="url" value="https://nit.pt/wp-content/uploads/2017/11/f3aa90f9a897782f7c45d7aff1df3756-754x394.jpg " class="form-control" id="inputPhotos" required>
+                            </div> 
+                        </div>
+                 </div>
+                 
+                 <!-- Buttons-->
+                 <div class="form-row">
+                     <div class="form-group col-md-12">
+                         <button type="submit" class="btn btn-primary mb-2">Adicionar Fotografia</button>
+                         <button type="reset" class="btn btn-primary mb-2">Limpar Tabela</button>
+                         <button type="button" class="btn btn-primary mb-2">Filtrar</button>
+                         <button type="button" class="btn btn-primary mb-2">Introduzir Hora</button>
+                     </div>
+                 </div>
+     
+     
+ 
+         
+ 
+        </div>
+        <!-- Table -->
+            <div>
+                <table id="tblPhotos" class="table table-sm table-responsive">            
+                </table>
+    
+            </div>
+    </form>
+    </div>
+     
+     
+ 
+     <!-- Optional JavaScript -->
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
